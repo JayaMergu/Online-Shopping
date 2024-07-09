@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Jewellery</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+      <!-- font awesome -->
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--  -->
+      <!-- owl stylesheets -->
+      <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesoeet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <style>
+body {
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 20px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+     
+     .product-container {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 20px;
+         justify-content: center;
+         width: 100%;
+     }
+     
+     .col-lg-4, .col-sm-4 {
+         width: calc(33.333% - 20px);
+     }
+     
+     .box_main {
+         border: 1px solid #ccc;
+         padding: 20px;
+         border-radius: 5px;
+         text-align: center;
+     }
+     
+     .shirt_text {
+         font-size: 24px;
+         margin-bottom: 10px;
+     }
+     
+     .price_text {
+         font-size: 18px;
+         margin-bottom: 20px;
+     }
+     
+     .cart_display {
+         margin-top: 20px;
+         width: 80%;
+     }
+     
+     .cart_table {
+         width: 100%;
+         border-collapse: collapse;
+         margin-bottom: 20px;
+     }
+     
+     .cart_table th, .cart_table td {
+         border: 1px solid #ccc;
+         padding: 10px;
+         text-align: center;
+     }
+     
+     .total_price {
+         font-weight: bold;
+         text-align: right;
+     }
+     
+           </style>
+   </head>
+   <body>
+      <!-- banner bg main start -->
+      <div class="banner_bg_main">
+         <!-- header top section start -->
+         <div class="container">
+            <div class="header_section_top">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="custom_menu">
+                        <ul>
+                           <li><a href="best-sellers.html">Best Sellers</a></li>
+                 <li><a href="giftideas.html">Gift Ideas</a></li>
+                 <li><a href="newrelease.html">New Releases</a></li>
+                 <li><a href="service.html">Customer Service</a></li>
+
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="admin.html">Login</a></li>
+
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- header top section start -->
+         <!-- logo section start -->
+         <div class="logo_section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- logo section end -->
+         <!-- header section start -->
+         <div class="header_section">
+            <div class="container">
+               <div class="containt_main">
+                  <div id="mySidenav" class="sidenav">
+                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                     <a href="index.html">Home</a>
+                     <a href="manfashion.html">Man Fashion</a>
+                     <a href="womenfashion.html">Women's Fashion</a>
+                     <a href="fashion.html">Fashion</a>
+                  </div>
+                  <span class="toggle_icon" onclick="openNav()"><img src="images/toggle-icon.png"></span>
+                  <div class="dropdown">
+                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category 
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                     </div>
+                  </div>
+                  <div class="main">
+                     <!-- Another variation with a button -->
+                     <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search this blog">
+                        <div class="input-group-append">
+                           <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
+                           <i class="fa fa-search"></i>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="header_box">
+                     <div class="lang_box ">
+                        <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true">
+                        <img src="images/flag-uk.png" alt="flag" class="mr-2 " title="United Kingdom"> English <i class="fa fa-angle-down ml-2" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu ">
+                           <a href="#" class="dropdown-item">
+                           <img src="images/flag-france.png" class="mr-2" alt="flag">
+                           French
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- header section end -->
+         <!-- banner section start -->
+         <div class="banner_section layout_padding">
+            <div class="container">
+               <div id="my_slider" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="row">
+                           <div class="col-sm-12">
+                              <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
+                           </div>
+                        </div>
+                     </div>
+                     
+               </div>
+            </div>
+         </div>
+         <!-- banner section end -->
+      </div>
+      <!-- banner bg main end -->
+      <!-- jewellery  section start -->
+      <div class="fashion_section">
+         <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <h1 class="fashion_taital">Women's Fashion Business Casual</h1>
+                     <div class="fashion_section_2">
+                        <div class="row">
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Women's Business Casual</h4>
+                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 50</span></p>
+                                 <div class="electronic_img"><img src="images/w1.jpg"></div>
+                                 <div class="btn_main">
+                                    <div class="buy_bt" onclick="success()"><a href="#" >Buy Now</a></div>
+                                    <button class="btn add-to-cart" data-id="2" data-title="Women's Fashion Business Casual" data-price="50">Add to cart</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Women's Business Casual</h4>
+                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 35</span></p>
+                                 <div class="electronic_img"><img src="images/w2.jpg"></div>
+                                 <div class="btn_main">
+                                    <div class="buy_bt" onclick="success()"><a href="#" >Buy Now</a></div>
+                                    <button class="btn add-to-cart" data-id="2" data-title="Women's Fashion Business Casual" data-price="35">Add to cart</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Women's Business Casual</h4>
+                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 40</span></p>
+                                 <div class="electronic_img"><img src="images/w6.webp"></div>
+                                 <div class="btn_main">
+                                    <div class="buy_bt" onclick="success()"><a href="#" >Buy Now</a></div>
+                                    <button class="btn add-to-cart" data-id="2" data-title="Women's Fashion Business Casual" data-price="40">Add to cart</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <h1 class="fashion_taital">Women's Fashion Business Casual</h1>
+                     <div class="fashion_section_2">
+                        <div class="row">
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Women's Business Casual</h4>
+                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 50</span></p>
+                                 <div class="electronic_img"><img src="images/w11.jpg"></div>
+                                 <div class="btn_main">
+                                    <div class="buy_bt" onclick="success()"><a href="#" >Buy Now</a></div>
+                                    <button class="btn add-to-cart" data-id="2" data-title="Women's Business Casual" data-price="50">Add to cart</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Women's Business Casual</h4>
+                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 44</span></p>
+                                 <div class="electronic_img"><img src="images/w12.jpg"></div>
+                                 <div class="btn_main">
+                                    <div class="buy_bt" onclick="success()"><a href="#" >Buy Now</a></div>
+                                    <button class="btn add-to-cart" data-id="2" data-title="Women's Business Casual" data-price="44">Add to cart</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Women's Business Casual</h4>
+                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 32</span></p>
+                                 <div class="electronic_img"><img src="images/w13.jpg"></div>
+                                 <div class="btn_main">
+                                    <div class="buy_bt" onclick="success()"><a href="#" >Buy Now</a></div>
+                                    <button class="btn add-to-cart" data-id="2" data-title="Women's Business Casual" data-price="32">Add to cart</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <h1 class="fashion_taital">Women's Fashion Business Casual</h1>
+                     <div class="fashion_section_2">
+                        <div class="row">
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Women's Business Casual</h4>
+                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 38</span></p>
+                                 <div class="electronic_img"><img src="images/w14.webp"></div>
+                                 <div class="btn_main">
+                                    <div class="buy_bt" onclick="success()"><a href="#" >Buy Now</a></div>
+                                    <button class="btn add-to-cart" data-id="2" data-title="Women's Business Casual" data-price="38">Add to cart</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Women's Business Casual</h4>
+                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 48</span></p>
+                                 <div class="electronic_img"><img src="images/w13.webp"></div>
+                                 <div class="btn_main">
+                                    <div class="buy_bt" onclick="success()"><a href="#" >Buy Now</a></div>
+                                    <button class="btn add-to-cart" data-id="2" data-title="Women's Business Casual" data-price="48">Add to cart</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-lg-4 col-sm-4">
+                              <div class="box_main">
+                                 <h4 class="shirt_text">Women's Business Casual</h4>
+                                 <p class="price_text">Start Price  <span style="color: #262626;">$ 38</span></p>
+                                 <div class="electronic_img"><img src="images/w15.png"></div>
+                                 <div class="btn_main">
+                                    <div class="buy_bt" onclick="success()"><a href="#" >Buy Now</a></div>
+                                    <button class="btn add-to-cart" data-id="2" data-title="Women's Business Casual" data-price="38">Add to cart</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="cart_display">
+               <h4>Add to Cart Total</h4>
+               <table class="cart_table">
+                   <thead>
+                       <tr>
+                           <th>Product</th>
+                           <th>Price</th>
+                           <th>Quantity</th>
+                           <th>Subtotal</th>
+                       </tr>
+                   </thead>
+                   <tbody class="cart_items">
+                       <!-- Cart items will be dynamically inserted here -->
+                   </tbody>
+               </table>
+               <p class="total_price">Total: $0.00</p>
+               <div class="btn_main">
+                  <button class="btn add-to-cart" onclick="order()">Go Order Now</button>
+
+               </div>
+           </div>
+       
+       <br>
+         </br>
+            <a class="carousel-control-prev" href="#electronic_main_slider" role="button" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#electronic_main_slider" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+            </a>
+         </div>
+      </div>
+      <!-- electronic section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="footer_logo"><a href="index.html"><img src="images/footer-logo.png"></a></div>
+            <div class="input_bt">
+               <input type="text" class="mail_bt" placeholder="Your Email" name="Your Email">
+               <span class="subscribe_bt" id="basic-addon2"><a href="#">Subscribe</a></span>
+            </div>
+            <div class="footer_menu">
+               <ul>
+                  <li><a href="#">Best Sellers</a></li>
+                  <li><a href="#">Gift Ideas</a></li>
+                  <li><a href="#">New Releases</a></li>
+                  <li><a href="#">Today's Deals</a></li>
+                  <li><a href="#">Customer Service</a></li>
+               </ul>
+            </div>
+            <div class="location_main">Help Line  Number : <a href="#">+1 1800 1200 1200</a></div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">© 2020 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a></p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script>
+
+
+         function openNav() {
+           document.getElementById("mySidenav").style.width = "250px";
+         }
+         
+         function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+         }
+
+         document.addEventListener('DOMContentLoaded', () => {
+    const cartItemsContainer = document.querySelector('.cart_items');
+    const totalPriceContainer = document.querySelector('.total_price');
+    const addToCartButtons = document.querySelectorAll('.btn');
+
+    const cart = [];
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const productTitle = button.closest('.box_main').querySelector('.shirt_text').innerText;
+            const productPrice = parseFloat(button.closest('.box_main').querySelector('.price_text span').innerText.replace('$', ''));
+
+            const product = {
+                title: productTitle,
+                price: productPrice
+            };
+
+            addToCart(product);
+            updateCartUI();
+        });
+    });
+
+    function addToCart(product) {
+        const existingProduct = cart.find(item => item.title === product.title);
+
+        if (existingProduct) {
+            existingProduct.quantity += 1;
+        } else {
+            product.quantity = 1;
+            cart.push(product);
+        }
+    }
+
+    function updateCartUI() {
+        cartItemsContainer.innerHTML = '';
+        let total = 0;
+
+        cart.forEach(product => {
+            const cartItem = document.createElement('li');
+            cartItem.classList.add('cart_item');
+            cartItem.innerHTML = `${product.title} - $${product.price} x ${product.quantity}`;
+            cartItemsContainer.appendChild(cartItem);
+
+            total += product.price * product.quantity;
+        });
+
+        totalPriceContainer.innerText = `Total: $${total.toFixed(2)}`;
+    }
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const cartItemsContainer = document.querySelector('.cart_items');
+    const totalPriceContainer = document.querySelector('.total_price');
+    const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+    const cart = [];
+
+    addToCartButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const productTitle = button.getAttribute('data-title');
+            const productPrice = parseFloat(button.getAttribute('data-price'));
+
+            const product = {
+                title: productTitle,
+                price: productPrice
+            };
+
+            addToCart(product);
+            updateCartUI();
+        });
+    });
+
+    function addToCart(product) {
+        const existingProduct = cart.find(item => item.title === product.title);
+
+        if (existingProduct) {
+            existingProduct.quantity += 1;
+        } else {
+            product.quantity = 1;
+            cart.push(product);
+        }
+    }
+
+    function updateCartUI() {
+        cartItemsContainer.innerHTML = '';
+        let total = 0;
+
+        cart.forEach(product => {
+            const cartRow = document.createElement('tr');
+            const subtotal = product.price * product.quantity;
+            cartRow.innerHTML = `
+                <td>${product.title}</td>
+                <td>$${product.price.toFixed(2)}</td>
+                <td>${product.quantity}</td>
+                <td>$${subtotal.toFixed(2)}</td>
+            `;
+            cartItemsContainer.appendChild(cartRow);
+
+            total += subtotal;
+        });
+
+        totalPriceContainer.innerText = `Total: $${total.toFixed(2)}`;
+    }
+});
+function success() {
+            alert("Keep shopping with Us!");
+            window.location.replace("userlist.html");
+        }
+
+        function order() {
+                alert("Keep shopping with Us!");
+                window.location.replace("userlist.html");
+            }
+      </script>
+   </body>
+</html>

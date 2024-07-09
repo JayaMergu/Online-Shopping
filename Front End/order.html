@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Bootstrap 5 icons CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>List User</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Responsive-->
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- fevicon -->
+	<link rel="icon" href="images/fevicon.png" type="image/gif" />
+	<!-- Scrollbar Custom CSS -->
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+	<!-- Tweaks for older IEs-->
+	
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- banner bg main start -->
+  <div class="banner_bg_main">
+    <!-- header top section start -->
+    <div class="container">
+      <div class="header_section_top">
+        <div class="row">
+          <div class="col-sm-12">
+             <div class="custom_menu">
+               <ul>
+                 <li><a href="best-sellers.html">Best Sellers</a></li>
+                 <li><a href="giftideas.html">Gift Ideas</a></li>
+                 <li><a href="newrelease.html">New Releases</a></li>
+                 <li><a href="service.html">Customer Service</a></li>
+
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="admin.html">Login</a></li>
+
+               </ul>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<br>
+</br>
+
+
+
+ 
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Fill the Form</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form action="#" id="myForm">
+
+                        <div class="card imgholder">
+                            <label for="imgInput" class="upload">
+                                <input type="file" name="" id="imgInput">
+                                <i class="bi bi-plus-circle-dotted"></i>
+                            </label>
+                            <img src="images/Profile Icon.webp" alt="" width="200" height="200" class="img">
+                        </div>
+
+                        <div class="inputField">
+                            <legend>Personal Details</legend>
+
+                            <div>
+                                <label for="name">Name:</label>
+                                <input type="text" name="" id="name" placeholder="Enter Customer Full Name" required>
+                            </div>
+                            
+                            <div>
+                                <label for="email">E-mail:</label>
+                                <input type="email" name="" id="email" placeholder="example@gmail.com" required>
+                            </div>
+                            <div>
+                                <label for="phone">Number:</label>
+                                <input type="text" name="" id="phone" minlength="10" maxlength="10" placeholder="Enter Customer number" required pattern="\d{10}">
+                            </div>
+							<div>
+                                <label for="city">Full Address:</label>
+                                <input type="text" name="" id="city" placeholder="Enter Customer State" required>
+                            </div>
+                            <div>
+                                <label for="zip">Zip code:</label>
+                                <input type="text" name="" id="zip" placeholder="Enter 6 digits" required  pattern="\d{6}">
+                            </div>
+                            
+							<div>
+                                <label for="size">Size :</label>
+                                <input type="size" name="" id="size" required>
+                            </div>
+							<div>
+                                <label for="quantity">Quantity:</label>
+                                <input type="text" name="" id="quantity" required>
+                            </div>
+                            <div>
+                                <label for="outfit">Choose Outfit:</label>
+                                <select id="outfit" name="outfit">
+                                    <option>Man Suit</option>
+                                    <option>Man Business Casual</option>
+                                    <option>Women Business Casual</option>
+                                    <option>Fashion Casual</option>
+
+                                            </select>
+                            </div>
+                            <div>
+                                <label for="sDate">Delivery Date:</label>
+                                <input type="date" name="" id="sDate" required>
+                            </div>
+                                <legend>Payment Details</legend>
+                                <div>
+                                    <label for="cardName">Card Name:</label>
+                                    <input type="text" name="" id="cardName" required>
+                                </div>
+                                <div>
+                                <label for="cardNumber">Card Number:</label>
+                                    <input type="text" name="" id="cardName" placeholder="Enter 12 digits" pattern="\d{12}">
+                                </div>
+
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="index.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></a>
+                    <button type="submit"  form="myForm" class="btn btn-primary submit" onclick="success()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>
+
+    
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+       var form = document.getElementById("myForm"),
+    imgInput = document.querySelector(".img"),
+    file = document.getElementById("imgInput"),
+    userName = document.getElementById("name"),
+    email = document.getElementById("email"),
+    phone = document.getElementById("phone"),
+    city = document.getElementById("city"),
+    size = document.getElementById("size"),
+    quantity = document.getElementById("quantity"),
+    outfit = document.getElementById("outfit"),
+    sDate = document.getElementById("sDate"),
+    submitBtn = document.querySelector(".submit"),
+    userInfo = document.getElementById("data"),
+    modal = document.getElementById("userForm"),
+    modalTitle = document.querySelector("#userForm .modal-title"),
+    newUserBtn = document.querySelector(".newUser")
+
+
+let getData = localStorage.getItem('userProfile') ? JSON.parse(localStorage.getItem('userProfile')) : []
+
+let isEdit = false, editId
+showInfo()
+
+newUserBtn.addEventListener('click', ()=> {
+    submitBtn.innerText = 'Submit',
+    modalTitle.innerText = "Fill the Form"
+    isEdit = false
+    imgInput.src = "./images/ProfileIcon.webp"
+    form.reset()
+})
+
+
+file.onchange = function(){
+    if(file.files[0].size < 1000000){  // 1MB = 1000000
+        var fileReader = new FileReader();
+
+        fileReader.onload = function(e){
+            imgUrl = e.target.result
+            imgInput.src = imgUrl
+        }
+
+        fileReader.readAsDataURL(file.files[0])
+    }
+    else{
+        alert("This file is too large!")
+    }
+}
+
+
+function showInfo(){
+    document.querySelectorAll('.employeeDetails').forEach(info => info.remove())
+    getData.forEach((element, index) => {
+        let createElement = `<tr class="employeeDetails">
+            <td>${index+1}</td>
+            <td><img src="${element.picture}" alt="" width="50" height="50"></td>
+            <td>${element.employeeName}</td>
+
+            <td>${element.employeeEmail}</td>
+            <td>${element.employeePhone}</td>
+            <td>${element.employeeCity}</td>
+            <td>${element.employeesize}</td>
+            <td>${element.employeequantity}</td>
+            <td>${element.employeeoutfit}</td>
+            <td>${element.startDate}</td>
+
+
+            <td>
+                <button class="btn btn-success" onclick="readInfo('${element.picture}', '${element.employeeName}', '${element.employeeEmail}', '${element.employeePhone}', '${element.employeeCity}', '${element.employeequantity}','${element.employeeoutfit}', '${element.startDate}')" data-bs-toggle="modal" data-bs-target="#readData"><i class="bi bi-eye"></i></button>
+
+                <button class="btn btn-primary" onclick="editInfo(${index}, '${element.picture}', '${element.employeeName}', '${element.employeeEmail}', '${element.employeePhone}', '${element.employeeCity}', '${element.employeequantity}', '${element.employeeoutfit}', '${element.startDate}')" data-bs-toggle="modal" data-bs-target="#userForm"><i class="bi bi-pencil-square"></i></button>
+
+                <button class="btn btn-danger" onclick="deleteInfo(${index})"><i class="bi bi-trash"></i></button>
+                            
+            </td>
+        </tr>`
+
+        userInfo.innerHTML += createElement
+    })
+}
+showInfo()
+
+
+function readInfo(pic, name, email, phone, city, size, quantity, outfit, sDate){
+    document.querySelector('.showImg').src = pic,
+    document.querySelector('#showName').value = name,
+    document.querySelector("#showEmail").value = email,
+    document.querySelector("#showPhone").value = phone,
+    document.querySelector("#showcity").value = city,
+
+    document.querySelector("#showsize").value = size,
+    document.querySelector("#showquantity").value = quantity,
+    document.querySelector("#showoutfit").value = outfit,
+
+    document.querySelector("#showsDate").value = sDate
+}
+
+
+function editInfo(index, pic, name, Email, Phone, city, size, quantity, outfit, Sdate){
+    isEdit = true
+    editId = index
+    imgInput.src = pic
+    userName.value = name
+    Email.value = Email
+    Phone.value =Phone
+    city.value = city,
+    size.value = size,
+    quantity.value = quantity,
+    outfit.value = outfit,
+    sDate.value = Sdate
+
+    submitBtn.innerText = "Update"
+    modalTitle.innerText = "Update The Form"
+}
+
+
+function deleteInfo(index){
+    if(confirm("Are you sure want to delete?")){
+        getData.splice(index, 1)
+        localStorage.setItem("userProfile", JSON.stringify(getData))
+        showInfo()
+    }
+}
+
+function success(){
+    alert("Thank You for Your ordering !");
+}
+
+form.addEventListener('submit', (e)=> {
+    e.preventDefault()
+
+    const information = {
+        picture: imgInput.src == undefined ? "./image/Profile Icon.webp" : imgInput.src,
+        employeeName: userName.value,
+        employeeEmail: email.value,
+        employeePhone: phone.value,
+        employeeCity: city.value,
+        employeesize: size.value,
+
+        employeequantity: quantity.value,
+
+
+        employeeoutfit: outfit.value,
+        startDate: sDate.value
+    }
+
+    if(!isEdit){
+        getData.push(information)
+    }
+    else{
+        isEdit = false
+        getData[editId] = information
+    }
+
+    localStorage.setItem('userProfile', JSON.stringify(getData))
+
+    submitBtn.innerText = "Submit"
+    modalTitle.innerHTML = "Fill The Form"
+
+    showInfo()
+
+    form.reset()
+
+    imgInput.src = "images/ProfileIcon.webp"  
+
+    // modal.style.display = "none"
+    // document.querySelector(".modal-backdrop").remove()
+
+})
+function success(){
+    alert("Thank You for Your ordering !");
+    window.location.replace("tq.html");
+
+}
+
+    </script>
+  
